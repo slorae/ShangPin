@@ -1,0 +1,67 @@
+﻿/*活动页导航*/
+.activity>p{color:#717171; height:25px; padding-left:23px; font:12px/25px "";}
+	.activity>p a{color:#212121; text-decoration:none;}
+	.activity>p a:hover{font-weight:bold;}
+/*活动页主题*/
+.theme{width:930px; height:220px; background:url(../images/activity_banner.jpg) no-repeat left top; padding:15px; margin-bottom:15px;}
+	.theme_word{float:right; width:335px; height:190px; background:#272727; color:#fff; padding:15px;}
+		.theme_word h1{font:16px/16px "";}
+		.theme_word h2{font:bold 14px/32px "";}
+		.theme_word h3{font:12px/20px "";}
+		.theme_word h4{padding-left:20px; background:url(../images/log1.png) no-repeat left center; font:normal 12px/30px ""; margin-bottom:15px;}
+		.theme_word>a{display:block; height:24px; width:117px; background:#0700C5; font:12px/24px ""; text-align:center; color:#fff; text-decoration:none; margin-bottom:5px;}
+		.theme_word>a:hover{background:#1c14e3;}
+		.theme_word h5{height:16px; text-align:right; font:normal 12px/16px "";}
+			.theme_word h5 a{width:17px; height:16px; vertical-align:middle; display:inline-block; background:url(../images/log.gif) no-repeat left top; background:cover;}
+			.theme_word h5 .qq{background-position:-20px 0;}
+			.theme_word h5 .douban{background-position:-40px 0;}
+			.theme_word h5 a:hover{background-position:0 -16px;}
+			.theme_word h5 .qq:hover{background-position:-20px -16px;}
+			.theme_word h5 .douban:hover{background-position:-40px -16px;}
+/* 商品筛选栏 */
+.filter{height: 22px; line-height: 22px; border-bottom:1px dotted #333; padding-bottom: 5px; position: relative;z-index: 1;background: #fff;width: 960px;margin-bottom: 5px;}
+.filter.fixed{position: fixed;left:50%;top: 0;margin-left: -480px;z-index: 999;}
+	.filter span{float: left;width: 50px;display: inline-block;text-align: center;color: #333;line-height: 20px;}
+		.filter>ul>li{float: left;padding: 0 5px;margin-right: 10px;height: 20px;line-height: 20px;
+position: relative;cursor: pointer;border: 1px solid #a6a6a6;outline: 0;}
+			.filter ul li span{padding-right: 52px;width: auto;background: url(../../common/images/filter_list.gif) no-repeat right -80px;float: left;text-align: center;color: #333;
+line-height: 20px;}
+			.filter ul li ul{position: absolute;left: 0; top: 20px;background: #fff;min-width: 100%;_width: 88px;margin-left: -1px;border: 1px solid #a6a6a6;overflow: hidden;overflow-y: auto;max-height: 240px;display: none;}
+    			.filter ul li ul li{position: relative;cursor: pointer;white-space: nowrap;display: block;line-height: 24px;height: 24px;padding-left: 5px;}
+    			
+    				.filter ul li ul li:hover{background: #333;color: #fff;}
+    .filter a.clear_select{float: left;margin-left: 15px;text-decoration: underline;cursor: pointer;}
+    .filter a.clear_select:hover{color: #000;}
+
+/* 商品信息 */
+.act-goods{width: 210px;height: 417px;padding: 0 15px;text-align: center;float: left;}
+	.act-goods dl{width:210px; height:400px;  position:relative;margin:0 auto;text-align: center;}
+	.act-goods dl:hover{border:1px solid #ccc;left: -1px;top: -1px;}
+		.act-goods dl dt{width:210px; height:280px; text-align: center;margin: 0 auto;}
+			.act-goods dl dt img{width:195px; height:280px;margin: 0 auto;}
+		.act-goods dl dd{text-align:center;height: 108px;width: 210px;padding-top: 12px;}
+			/* 商品具体信息*/
+			.act-goods dl dd p{padding: 0 5px;height: 16px;border: 1px solid #888;color: #888;margin: 0 auto;text-align: center;line-height: 16px;margin-bottom:5px;width: auto;display: inline-block;}
+			.act-goods dl dd a{ display:block;margin-bottom:5px; }
+			.act-goods dl dd .brand{color:#333; font-size: 16px;}
+			.act-goods dl:hover dd .brand{color:#000;}
+			.act-goods dl dd .name{color:#555;}
+			.act-goods dl dd span{color:#C62026;display: inline-block;margin-right: 15px;}
+			.act-goods dl dd del{color:#888;}
+			.act-goods dl:hover dd a{text-decoration:underline;}
+	/* 遮罩 */
+		.act-goods dl p.shade{width:195px; height:21px; background:#E5E5E5; filter:alpha(opacity:70); opacity:0.7; position:absolute; top:259px; left:7px; border-bottom:1px solid #d9d9d9;display: none;color: #000;}
+		.act-goods dl:hover p.shade{display: block;}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
