@@ -1,0 +1,69 @@
+/*横幅广告：banner*/
+.banner{height: 520px;}
+	.banner_t{height: 50px;background: #eee;text-align: center;font-size: 16px;line-height: 50px;}
+	.banner_b{height: 470px;position: relative;overflow: hidden;}
+		.banner_b a{display: block;}
+		.banner_b p{position: absolute;top: 205px;cursor: pointer;}
+			.banner_b p.left{left: 0;}
+			.banner_b p.right{right: 0;}
+	
+/*热门潮流 */
+.tideway{height: 350px;margin-bottom: 5px;}
+	.title{height: 39px;border-bottom: 1px solid black;margin-bottom: 3px;}
+		.title h4{font-size: 18px;float: left;margin-top: 13px;}
+		.title>a{float: right;color: #717171;margin-top: 21px;}
+		.title a:hover{color: #333;}
+	.tideway_b{height: 310px;position: relative;}
+		.logo_l,.logo_r{width:377px ;}
+			.logo_l a,.logo_r a{float: left;}
+		.logo_l{float: left;}	
+		.logo_r{float: right;}
+		.logo_show{width:204px ;height: 310px;position: absolute;top:0 ;left: 377px;z-index: 2;}
+			.logo_show a{display: block;width:0px;padding: 0 102px;height: 100%;}
+			.logo_show a img{width:0px;height: 100%;}
+
+/*最新上架*/
+.new_arrival{height: 847px;}
+	.new_t{height: 490px;margin-bottom: 15px;}
+		.new_t dl{float: left;width:158px ;height: 243px;margin: 1px;text-align: center;}
+		.new_t dl:hover{width:158px ;height: 243px;border: 1px solid #E4E8E9;margin: 0;}
+			.new_t dl dt{padding-left: 10px;}
+				.new_t dl dt img{width: 140px;}
+			.new_t dl dd{white-space: pre-line;color: #212121;text-align: center;}
+	.new_c{height: 220px;margin-bottom: 20px;}
+		.new_c a{float: left;}
+		.new_c a+a{margin-left: 8px;}
+
+/*商品区*/
+.market{position: relative;}
+.frock,.womanshoe,.menswear,.manshoe,.bag,.acc,.glasses{height: 485px;}
+	/*商品区标题部分*/
+	.title ul{float: right;margin-top: 21px;margin-right: 15px;}
+		.title ul li{float: left;background: url(../images/title_li.jpg) right center no-repeat;}
+		.title ul li a{display: block;padding: 0 10px; color: #717171;}
+		.title ul li a:hover{color: #333;}
+	/*左边logo区*/
+	.market_logo{float: left;width: 140px;height: 442px;background: #666;position: relative;overflow: hidden;}
+		.market_logo div{position: absolute;left: 0;top: 0;width: 420px;}
+		.market_logo ul{float: left;width: 140px;}
+			.market_logo ul a{display: block;}
+	/*中间图片展示区*/
+	.market_show{float: left;width:340px ;margin-left: 1px;margin-right: 2px;}
+		.womanshoe .market_show a,.menswear .market_show a,.bag .market_show a,.acc .market_show a,.glasses .market_show a{display:block;margin-bottom: 2px;}
+		.womanshoe .market_show a+a,.menswear .market_show a+a,.bag .market_show a+a,.acc .market_show a+a,.glasses .market_show a+a{margin-bottom:0;}
+	/*右边产品区*/
+	.market_product{float: left;width:474px ;height:442px ;border-left:1px solid #E4E8E9;border-bottom:1px solid #E4E8E9;}
+	.market_product dl{float: left;text-align: center;width: 157px;height: 212px;border-right:1px solid #E4E8E9;border-top:1px solid #E4E8E9;padding-top: 8px;position: relative;}
+		.market_product dl dd{height: 26px;position: absolute;top:8px;left: 0;}
+		.market_product dl dd span{display:block;white-space: nowrap;overflow: hidden;text-overflow:ellipsis;width: 130px;color: #717171;margin: 0 auto;text-align: center;}
+			.market_product dl dd p{width:151px;color: #212121;text-align: center;line-height: 12px;}
+		.market_product dl dt{position: absolute;top:34px;left: 17px;}
+			
+/*热门商品*/
+.pop_good{height: 555px;margin-bottom: 35px;}
+	/*标题部分*/
+	.pop_good .title ul{float: left;margin-left: 300px;}
+		.pop_good .title ul li+li{background: none;}
+		.pop_good .title ul li a.active{color: #333;}
+	.pop_good .new_t{display: none;}
+	.pop_good .new_t.active{display: block;}

@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../common/css/common.css" />
+		<link rel="stylesheet" href="css/detail.css" />
+	</head>
+	<body>
+		<div class="layout">
+			<!-- 网页头部 -->
+			<div class="top">
+				<!-- 网页头部上部分 -->
+				<div class="top_t  clearfix">
+					<div id="hint"></div>
+					<!-- 未登录 -->
+					<ul id="nlogined">
+						<span>欢迎来到尚品网，</span>
+						<li><a href="../usersManage/login.html">登录</a></li>
+						<li><a href="../usersManage/register.html">注册</a></li>
+					</ul>
+					<!-- 已登录  class="active"-->
+					<div class="logined" id="logined">
+						欢迎 <span id="user"></span>，<span id="member">普通会员</span>
+						<li id="center"><a href="javascript:;">个人中心 ▼</a></li>
+						<p></p>
+						<ul>
+							<li id="center1"><a href="javascript:;">我的订单<span>(0)</span></a></li>
+							<li id="center2"><a href="javascript:;">物流信息</a></li>
+							<li id="center3"><a href="javascript:;">我的礼品卡</a></li>
+							<li id="center4"><a href="javascript:;">自助退换货</a></li>
+							<li id="center5"><a href="javascript:;">优惠券<span>(0)</span></a></li>
+							<li id="center6"><a href="javascript:;">我的收藏</a></li>
+							<li id="center7"><a href="javascript:;">尚品会员</a></li>
+							<li id="center8"><a href="javascript:;" id="logout">退出登录</a></li>		
+						</ul>
+					</div>
+					<a id="cart">购物袋 (0) ▼</a>
+					<div class="cart-down" id="cart_down">
+						<div class="cart-down-blank" id="cart_down_blank">
+							您的购物车中暂无商品，
+							快去挑选自己钟爱的商品吧！
+						</div>
+					</div>
+				</div>
+				<!-- 网页头部下部分 -->
+				<div class="top_b clearfix">
+					<a href="../index.html" title="尚品网奢侈品_高端时尚平台购物"></a>
+					<p><input type="text" placeholder="2016年早秋新品" id="inp"/><a href="javascript:;"></a></p>
+				</div>
+			</div>
+			<!-- 导航条-->
+			<div class="nav">
+				<!-- 导航条导航部分 -->
+				<ul class="clearfix">
+					<li><a href="javascripe:;" class="first">首页</a></li>
+					<li><a href="javascripe:;">当季新品</a></li>
+					<li><a href="javascripe:;">女装</a></li>
+					<li><a href="javascripe:;">女鞋</a></li>
+					<li><a href="javascripe:;">男装</a></li>
+					<li><a href="javascripe:;">男鞋</a></li>
+					<li><a href="javascripe:;">箱包</a></li>
+					<li><a href="javascripe:;">配件</a></li>
+					<li><a href="javascripe:;">运动馆</a></li>
+					<li><a href="javascripe:;">设计师</a></li>
+					<li><a href="javascripe:;">品牌</a></li>
+					<li><a href="javascripe:;">TOPSHOP</a></li>
+					<li><a href="javascripe:;">TOPMAN</a></li>
+					<li><a href="javascripe:;" class="last">SALE</a></li>
+				</ul>
+				<!-- 导航条下拉部分1 女装区 -->
+				<div class="nav-down clearfix">
+					<!-- 下拉左边部分 -->
+					<div class="navd_l">
+						<h4 class="nav_title">热门推荐</h4>
+						<a href="javascript:;">明星同款 紧俏尖货</a>
+						<a href="javascript:;">ACNE针织毛衣</a>
+						<a href="javascript:;">MAX MARA大衣</a>
+						<a href="javascript:;">MONCLER羽绒服</a>
+						<a href="javascript:;">MO&Co.新品</a>
+					</div>
+					<!-- 下拉中间部分 -->
+					<div class="navd_c">
+						<div class="nc_word clearfix">
+							<h4 class="nav_title"><a href="javascript:;">全部女装</a></h4>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;" >上装</a></p>
+								<a href="javascript:;">T恤</a><a href="javascript:;">衬衫</a><a href="javascript:;">女衫</a><a href="javascript:;">POLO衫</a><a href="javascript:;">卫衣</a><a href="javascript:;">吊带背心</a><a href="javascript:;">开衫上衣</a><a href="javascript:;">连体衣</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">针织</a></p>
+								<a href="javascript:;">开衫</a><a href="javascript:;">针织毛衣</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">外套</a></p>
+								<a href="javascript:;">夹克</a><a href="javascript:;">马甲</a><a href="javascript:;">斗篷</a><a href="javascript:;">西装</a><a href="javascript:;">风衣</a><a href="javascript:;">棉服</a><a href="javascript:;">皮衣</a><a href="javascript:;">皮草</a><a href="javascript:;">羽绒服</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">大衣</a></p>
+								<a href="javascript:;">大衣</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">连衣裙</a></p>
+								<a href="javascript:;">衬衫裙</a><a href="javascript:;">及膝裙</a><a href="javascript:;">过膝裙</a><a href="javascript:;">及裸裙</a><a href="javascript:;">连衣裙</a>
+							</div>
+							
+							<p><a href="javascript:;">半身裙</a></p>
+						</div>
+						<div class="nc_img">
+							<a href="javascript:;" class="active"><img src="../common/images/nc_frock1.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_frock2.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_frock3.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_frock4.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_frock5.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_frock6.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_frock7.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_frock8.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_frock9.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_frock10.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_frock11.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_frock12.jpg" /></a>
+						</div>
+					</div>
+					<!-- 下拉右边部分 -->
+					<div class="navd_r">
+						<div class="nr_word clearfix">
+							<h4 class="nav_title">热门品牌</h4>
+							<a href="javascript:;">TOPSHOP</a>
+							<a href="javascript:;">MO&Co.</a>
+							<a href="javascript:;">KENZO</a>
+							<a href="javascript:;">MOSCHINO</a>
+							<a href="javascript:;">BURBERRY</a>
+							<a href="javascript:;">MONCLER</a>
+							<a href="javascript:;">MISS SELFRIDGE</a>
+							<a href="javascript:;">BARDOT</a>
+							<a href="javascript:;">MO&Co.edition</a>
+							<a href="javascript:;">FREE PEOPLE</a>
+							<a href="javascript:;">CHRIS BY CHRISTOPHER</a>
+							<a href="javascript:;">DAZZLE</a>
+							<a href="javascript:;">全部品牌A-Z ></a>
+						</div>
+						<div class="nr_img">
+							<img src="../common/images/nr_frock.jpg" />
+						</div>
+					</div>
+				</div>
+				<!-- 导航条下拉部分2 女鞋区 -->
+				<div class="nav-down clearfix">
+					<!-- 下拉左边部分 -->
+					<div class="navd_l">
+						<h4 class="nav_title">小辣椒同款芭蕾鞋</h4>
+						<a href="javascript:;">时髦雪地靴</a>
+						<a href="javascript:;">5050瘦腿长靴</a>
+						<a href="javascript:;">复古中高跟鞋</a>
+						<a href="javascript:;">厚底鞋集合</a>
+						<a href="javascript:;">小脏鞋的时尚态度</a>
+						<a href="javascript:;">特惠鞋履集合</a>
+					</div>
+					<!-- 下拉中间部分 -->
+					<div class="navd_c">
+						<div class="nc_word clearfix">
+							<h4 class="nav_title"><a href="javascript:;">全部女鞋</a></h4>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;" >靴子</a></p>
+								<a href="javascript:;">及踝靴</a><a href="javascript:;">中筒靴 </a><a href="javascript:;"> 及膝靴</a><a href="javascript:;">过膝靴</a><a href="javascript:;">雪地靴</a><a href="javascript:;">雨靴</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">休闲鞋</a></p>
+								<a href="javascript:;">厚底鞋</a><a href="javascript:;" class="last">牛津鞋</a><a href="javascript:;">系带鞋</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">平底鞋</a></p>
+								<a href="javascript:;">豆豆鞋</a><a href="javascript:;">乐福鞋</a><a href="javascript:;">便鞋</a><a href="javascript:;">芭蕾舞鞋</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">高跟鞋</a></p>
+								<a href="javascript:;" class="last">中低跟</a><a href="javascript:;" class="last">高跟</a><a href="javascript:;" >坡跟</a>
+							</div>
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">休闲运动鞋</a></p>
+								<a href="javascript:;">滑板鞋</a><a href="javascript:;">休闲鞋</a><a href="javascript:;">跑步鞋</a><a href="javascript:;">户外鞋</a><a href="javascript:;">连衣裙</a>
+							</div>
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">凉鞋</a></p>
+								<a href="javascript:;">平底凉鞋</a><a href="javascript:;">中低跟凉鞋</a><a href="javascript:;">高跟凉鞋</a><a href="javascript:;">坡跟凉鞋</a><a href="javascript:;" >拖鞋</a>
+							</div>
+						</div>
+						<div class="nc_img">
+							<a href="javascript:;" class="active"><img src="../common/images/nc_womenshoe1.jpg"/></a>
+							<a href="javascript:;"><img src="../common/images/nc_womenshoe2.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_womenshoe3.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_womenshoe4.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_womenshoe5.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_womenshoe6.jpg" /></a>
+						</div>                                                                  
+					</div>
+					<!-- 下拉右边部分 -->
+					<div class="navd_r">
+						<div class="nr_word clearfix">
+							<h4 class="nav_title">热门推荐</h4>
+							<a href="javascript:;">STUART WEITZMAN</a>
+							<a href="javascript:;">SALVATORE FERRAGAMO</a>
+							<a href="javascript:;">JIMMY CHOO</a>
+							<a href="javascript:;">GUCCI</a>
+							<a href="javascript:;">PRADA</a>
+							<a href="javascript:;">MIU MIU</a>
+							<a href="javascript:;">STELLA MCCARTNEY</a>
+							<a href="javascript:;">TOD'S</a>
+							<a href="javascript:;">MANOLO BLAHNIK</a>
+							<a href="javascript:;">GIUSEPPE ZANOTTI DES</a>
+							<a href="javascript:;">GOLDEN GOOSE DELUXE</a>
+							<a href="javascript:;">CHURCH'S</a>
+							<a href="javascript:;">全部品牌A-Z ></a>
+						</div>
+						<div class="nr_img">
+							<img src="../common/images/nr_womenshoe.jpg" />
+						</div>
+					</div>
+				</div>
+				<!-- 导航条下拉部分3  男装区-->
+				<div class="nav-down clearfix">
+					<!-- 下拉左边部分 -->
+					<div class="navd_l">
+						<h4 class="nav_title">热门品牌</h4>
+						<a href="javascript:;">KENZO虎头经典</a>
+						<a href="javascript:;">CK秋冬热销</a>
+						<a href="javascript:;">GUCCI围巾</a>
+						<a href="javascript:;">BURBERRY</a>
+						<a href="javascript:;">MONCLER</a>
+					</div>
+					<!-- 下拉中间部分 -->
+					<div class="navd_c">
+						<div class="nc_word clearfix">
+							<h4 class="nav_title"><a href="javascript:;">全部男装</a></h4>
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;" >上装</a></p>
+								<a href="javascript:;">短袖T恤</a><a href="javascript:;">POLO衫</a><a href="javascript:;">短袖衬衫</a><a href="javascript:;">长袖T恤</a><a href="javascript:;">长袖Polo衫</a><a href="javascript:;">长袖衬衫</a><a href="javascript:;">针织衫/毛衣 </a><a href="javascript:;"> 卫衣 </a><a href="javascript:;"> 马甲 </a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">外套</a></p>
+								<a href="javascript:;">风衣 </a><a href="javascript:;" class="last">夹克</a><a href="javascript:;">西装 </a><a href="javascript:;">皮衣</a><a href="javascript:;">大衣</a><a href="javascript:;">棉衣</a><a href="javascript:;">羽绒服</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">裤装</a></p>
+								<a href="javascript:;">牛仔裤</a><a href="javascript:;"> 休闲裤</a><a href="javascript:;">斗篷</a><a href="javascript:;">短裤</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">内衣</a></p>
+								<a href="javascript:;" class="last">内裤</a><a href="javascript:;">打底背心</a><a href="javascript:;"> 保暖内衣</a><a href="javascript:;">家居服</a><a href="javascript:;">袜子</a><a href="javascript:;">套装</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">套装</a></p>
+								<a href="javascript:;">西装套装</a>
+							</div>
+							
+							<p><a href="javascript:;">休闲运动</a></p>
+						</div>
+						<div class="nc_img">
+							<a href="javascript:;" class="active"><img src="../common/images/nc_menswear1.jpg"/></a>
+							<a href="javascript:;"><img src="../common/images/nc_menswear2.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_menswear3.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_menswear4.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_menswear5.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_menswear6.jpg" /></a>
+						</div>                                                
+					</div>
+					<!-- 下拉右边部分 -->
+					<div class="navd_r">
+						<div class="nr_word clearfix">
+							<h4 class="nav_title">热门品牌</h4>
+							<a href="javascript:;">TOPMAN</a>
+							<a href="javascript:;">BURBERRY</a>
+							<a href="javascript:;">PRADA</a>
+							<a href="javascript:;">DOLCE & GABBANA</a>
+							<a href="javascript:;">ARMANI JEANS</a>
+							<a href="javascript:;">EMPORIO ARMANI</a>
+							<a href="javascript:;">VERSACE</a>
+							<a href="javascript:;">Z ZEGNA</a>
+							<a href="javascript:;">KENZO</a>
+							<a href="javascript:;">DSQUARED2</a>
+							<a href="javascript:;">ALEXANDER MCQUEEN</a>
+							<a href="javascript:;">PHILIPP PLEIN</a>
+							<a href="javascript:;">全部品牌A-Z ></a>
+						</div>
+						<div class="nr_img">
+							<img src="../common/images/nr_menswear.jpg" />
+						</div>
+					</div>
+				</div>
+				<!-- 导航条下拉部分4  男鞋区-->
+				<div class="nav-down clearfix">
+					<!-- 下拉左边部分 -->
+					<div class="navd_l">
+						<h4 class="nav_title">热门推荐</h4>
+						<a href="javascript:;">BALLY火车纹男鞋</a>
+						<a href="javascript:;">TOD'S舒适豆豆鞋</a>
+						<a href="javascript:;">朱塞佩潮牌休闲鞋</a>
+						<a href="javascript:;">菲拉格慕驾车鞋</a>
+						<a href="javascript:;">VALENTINO</a>
+						<a href="javascript:;">鬼才设计</a>
+						<a href="javascript:;">HOGAN休闲运动鞋</a>
+						<a href="javascript:;">PRADA经典款男鞋</a>
+					</div>
+					<!-- 下拉中间部分 -->
+					<div class="navd_c">
+						<div class="nc_word clearfix">
+							<h4 class="nav_title"><a href="javascript:;">全部男鞋</a></h4>
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;" >日常休闲鞋</a></p>
+								<a href="javascript:;">帆布鞋</a><a href="javascript:;">帆船鞋</a><a href="javascript:;">豆豆鞋</a><a href="javascript:;">便鞋</a><a href="javascript:;">休闲皮鞋</a><a href="javascript:;">休闲运动鞋</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">靴子</a></p>
+								<a href="javascript:;">及踝靴</a><a href="javascript:;">机车靴</a><a href="javascript:;">马丁靴</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">商务皮鞋</a></p>
+								<a href="javascript:;">商务正装鞋</a><a href="javascript:;">商务休闲鞋</a><a href="javascript:;">婚礼/宴会鞋</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">运动鞋</a></p>
+								<a href="javascript:;" class="last">篮球鞋</a><a href="javascript:;">滑板鞋</a><a href="javascript:;">运动鞋</a><a href="javascript:;">跑步鞋</a><a href="javascript:;">户外鞋</a><a href="javascript:;">登山鞋</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">凉鞋</a></p>
+								<a href="javascript:;">凉鞋</a><a href="javascript:;">拖鞋</a>
+							</div>
+						</div>
+						<div class="nc_img">
+							<a href="javascript:;" class="active"><img src="../common/images/nc_menshoe1.jpg"/></a>
+							<a href="javascript:;"><img src="../common/images/nc_menshoe2.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_menshoe3.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_menshoe4.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_menshoe5.jpg" /></a>
+						</div>
+					</div>
+					<!-- 下拉右边部分 -->
+					<div class="navd_r">
+						<div class="nr_word clearfix">
+							<h4 class="nav_title">热门品牌</h4>
+							<a href="javascript:;">TOPSHOP</a>
+							<a href="javascript:;">TOD'S</a>
+							<a href="javascript:;">BALLY</a>
+							<a href="javascript:;">SALVATORE FERRAGAMO</a>
+							<a href="javascript:;">GUCCI</a>
+							<a href="javascript:;">GIUSEPPE ZANOTTI DES</a>
+							<a href="javascript:;">ALEXANDER MCQUEEN</a>
+							<a href="javascript:;">VALENTINO</a>
+							<a href="javascript:;">HOGAN</a>
+							<a href="javascript:;">GOLDEN GOOSE DELUXE</a>
+							<a href="javascript:;">DOLCE & GABBANA</a>
+							<a href="javascript:;">EMPORIO ARMANI</a>
+							<a href="javascript:;">全部品牌A-Z ></a>
+						</div>
+						<div class="nr_img">
+							<img src="../common/images/nr_menshoe.jpg" />
+						</div>
+					</div>
+				</div>
+				<!-- 导航条下拉部分5  箱包区-->
+				<div class="nav-down clearfix">
+					<!-- 下拉左边部分 -->
+					<div class="navd_l">
+						<h4 class="nav_title">热门推荐</h4>
+						<a href="javascript:;">奢华首选PRADA</a>
+						<a href="javascript:;">英式格纹BURBERRY</a>
+						<a href="javascript:;">时尚潮流CHLOE</a>
+						<a href="javascript:;">精致手袋LOEWE</a>
+						<a href="javascript:;">童趣时尚 ANYA</a>
+						<a href="javascript:;">硬朗链条STELLA</a>
+						<a href="javascript:;">时髦包袋FENDI</a>
+					</div>
+					<!-- 下拉中间部分 -->
+					<div class="navd_c">
+						<div class="nc_word clearfix">
+							<h4 class="nav_title"><a href="javascript:;">全部箱包</a></h4>
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;" >女包</a></p>
+								<a href="javascript:;">手提包</a><a href="javascript:;">单肩包</a><a href="javascript:;">钱包</a><a href="javascript:;">斜挎包</a><a href="javascript:;">双肩包</a><a href="javascript:;">手拿包</a><a href="javascript:;">化妆包</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">男包</a></p>
+								<a href="javascript:;">手提包</a><a href="javascript:;">公文包</a><a href="javascript:;">钱包</a><a href="javascript:;">斜挎包</a><a href="javascript:;">手拿包</a><a href="javascript:;">双肩包</a><a href="javascript:;">单肩包</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">小型包具</a></p>
+								<a href="javascript:;">钥匙包</a><a href="javascript:;">票据夹</a><a href="javascript:;">名片夹</a><a href="javascript:;">卡包</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">户外/运动</a></p>
+								<a href="javascript:;" class="last">运动双肩包</a><a href="javascript:;">功能箱包</a><a href="javascript:;">运动腰包</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">旅行箱包</a></p>
+								<a href="javascript:;">拉杆箱</a><a href="javascript:;">旅行袋</a>
+							</div>
+						</div>
+						<div class="nc_img">
+							<a href="javascript:;" class="active"><img src="../common/images/nc_bag1.jpg"/></a>
+							<a href="javascript:;"><img src="../common/images/nc_bag2.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_bag3.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_bag4.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_bag5.jpg" /></a>
+						</div>
+					</div>
+					<!-- 下拉右边部分 -->
+					<div class="navd_r">
+						<div class="nr_word clearfix">
+							<h4 class="nav_title">热门品牌</h4>
+							<a href="javascript:;">SALVATORE FERRAGAMO</a>
+							<a href="javascript:;">GUCCI</a>
+							<a href="javascript:;">PRADA</a>
+							<a href="javascript:;">COACH</a>
+							<a href="javascript:;">MICHAEL KORS</a>
+							<a href="javascript:;">BURBERRY</a>
+							<a href="javascript:;">FENDI</a>
+							<a href="javascript:;">BALLY</a>
+							<a href="javascript:;">MIU MIU</a>
+							<a href="javascript:;">BOTTEGA VENETA</a>
+							<a href="javascript:;">DOLCE & GABBANA</a>
+							<a href="javascript:;">全部品牌A-Z ></a>
+						</div>
+						<div class="nr_img">
+							<img src="../common/images/nr_bag.jpg" />
+						</div>
+					</div>
+				</div>
+				<!-- 导航条下拉部分6 配饰区 -->
+				<div class="nav-down clearfix">
+					<!-- 下拉左边部分 -->
+					<div class="navd_l">
+						<h4 class="nav_title">热门推荐</h4>
+						<a href="javascript:;">BURBERRY英伦风尚镜品</a>
+						<a href="javascript:;">RAY-BAN®明星镜饰</a>
+						<a href="javascript:;">CHLOE浪漫优雅气质美镜</a>
+						<a href="javascript:;">亚历山大·麦昆配饰</a>
+						<a href="javascript:;">手机壳集合场</a>
+						<a href="javascript:;">PRADA普拉达贵族镜饰</a>
+						<a href="javascript:;">永占巅峰 GUCCI镜饰</a>
+						<a href="javascript:;">全球时尚镜品</a>
+						<a href="javascript:;">热播韩剧明星同款配饰</a>
+						<a href="javascript:;">薇薇安.威斯特伍德新</a>
+					</div>
+					<div class="navd_c">
+						<div class="nc_word clearfix">
+							<h4 class="nav_title"><a href="javascript:;">全部配件</a></h4>     
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;" >珠宝</a></p>
+								<a href="javascript:;">手链</a><a href="javascript:;">耳饰</a><a href="javascript:;">项链</a><a href="javascript:;">发饰</a><a href="javascript:;">戒指</a><a href="javascript:;">胸针</a><a href="javascript:;">饰品配件</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">眼镜</a></p>
+								<a href="javascript:;">太阳镜</a><a href="javascript:;">光学镜架</a><a href="javascript:;">彩膜太阳镜</a><a href="javascript:;">运动眼镜</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">礼品</a></p>
+								<a href="javascript:;">钥匙扣</a><a href="javascript:;">文具</a><a href="javascript:;">数码配件</a><a href="javascript:;">伞具</a>
+							</div>
+							           
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">女士服饰配饰</a></p>
+								<a href="javascript:;" class="last">帽子</a><a href="javascript:;">腰带</a><a href="javascript:;">手套</a><a href="javascript:;">围巾</a>
+							</div>
+							
+							<div class="nc_list clearfix">
+								<p><a href="javascript:;">男士服饰配饰</a></p>
+								<a href="javascript:;">帽子</a><a href="javascript:;">领带</a><a href="javascript:;">腰带</a><a href="javascript:;">手套</a><a href="javascript:;">围巾</a>
+							</div>
+						</div>
+						<div class="nc_img">
+							<a href="javascript:;" class="active"><img src="../common/images/nc_bag1.jpg"/></a>
+							<a href="javascript:;"><img src="../common/images/nc_bag2.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_bag3.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_bag4.jpg" /></a>
+							<a href="javascript:;"><img src="../common/images/nc_bag5.jpg" /></a>
+						</div>
+					</div>
+					<!-- 下拉右边部分 -->
+					<div class="navd_r">
+						<div class="nr_word clearfix">
+							<h4 class="nav_title">热门品牌</h4>
+							<a href="javascript:;">ALEXANDER MCQUEEN</a>
+							<a href="javascript:;">RAY-BAN</a>
+							<a href="javascript:;">PRADA</a>
+							<a href="javascript:;">CHLOE</a>
+							<a href="javascript:;">KENZO</a>
+							<a href="javascript:;">VIVIENNE WESTWOOD</a>
+							<a href="javascript:;">GUCCI</a>
+							<a href="javascript:;">CHIARA FERRAGNI</a>
+							<a href="javascript:;">BVLGARI</a>
+							<a href="javascript:;">J.ESTINA</a>
+							<a href="javascript:;">MARC BY MARC JACOBS</a>
+							<a href="javascript:;" class="last">MOSCHINO</a>
+							<a href="javascript:;">全部品牌A-Z ></a>
+						</div>
+						<div class="nr_img">
+							<img src="../common/images/nr_acc.jpg" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 商品展示-->
+			<div class="clothes"  data-good-id="pd001">
+				<h4><a href="javascript:;">女装</a> > <a href="javascript:;">大衣</a> > <a href="javascript:;">MO&Co. </a> > <span>女士连帽双面呢大衣 MT154OVC04W02</span></h4>
+				<!-- 商品展示左边部分（包括全部放大镜）-->
+				<div class="clothes_l">
+					<!-- 小展示区-->
+					<div id="small_box">
+						<img src="images/clothes_show1.jpg"/>
+						<!-- 移动小浮块-->
+						<div id="img_focus"></div>
+					</div>
+					<!-- 大展示区-->
+					<div id="big_box">
+						<img src="images/clothes_show1.jpg" />
+					</div>
+					<div id="cl_tabs">
+						<a href="javascript:;" class="left"></a>
+						<div class="img_list">
+							<ul id="listBox">
+								<li class="active"><img src="images/clothes_tab1.jpg" /></li>
+								<li><img src="images/clothes_tab2.jpg" /></li>
+								<li><img src="images/clothes_tab3.jpg" /></li>
+								<li><img src="images/clothes_tab4.jpg" /></li>
+								<li><img src="images/clothes_tab5.jpg" /></li>
+								<li><img src="images/clothes_tab6.jpg" /></li>
+								<li><img src="images/clothes_tab7.jpg" /></li>
+							</ul>
+						</div>
+						<a href="javascript:;" class="right"></a>
+					</div>
+					<div class="shareTo">
+						分享到：<a href="javascript:;" id="share1"></a><a href="javascript:;"id="share2"></a><a href="javascript:;"id="share3"></a>
+					</div>
+				</div>
+				<!-- 商品展示右边部分-->
+				<div class="clothes_r">
+					<div class="intro">
+						<a href="javascript:;">MO&Co.</a>
+						<h3>女士连帽双面呢大衣 MT154OVC04W02</h3>
+						<b>撞色双面呢 暗扣设计</b>
+						<span>商品编号 : 30246861</span>
+						<p>促销价：<i>￥1349</i><del>￥2899</del></p>
+					</div>
+					<div class="choice">
+						<span id="clothes_name">颜色：浅花灰</span>
+						<img src="images/cr_show.jpg" id="clothes_demo"/>
+						<span>尺码：</span>
+						<p class="clearfix size"><b>XS</b><b>S</b><b>M</b><a href="javascript:;"></a>
+						<img src="images/size_hover1.png" id="hover1"/>
+						<img src="images/size_hover2.png" id="hover2"/> 
+						<img src="images/size_hover3.png" id="hover3"/> </p>
+						<span>数量：</span>
+						<a href="javascript:;" class="select"><b>1</b><img src="images/detail_selectbg.png"/></a><span class="cr_tip">请选择商品尺码 </span>
+						<div>
+							<a href="javascript:;">1</a>
+							<a href="javascript:;">2</a>
+							<a href="javascript:;">3</a>
+							<a href="javascript:;">4</a>
+							<a href="javascript:;">5</a>
+							<a href="javascript:;">6</a>
+							<a href="javascript:;">7</a>
+							<a href="javascript:;">8</a>
+							<a href="javascript:;">9</a>
+							<a href="javascript:;">10</a>
+						</div>
+						<p class="btn"><a href="javascript:;" id="addList">加入愿望清单</a><a href="javascript:;" id="addCart" class="goTo"><span>加入购物袋</span></a></p>
+					</div>
+					<div class="payment">
+						<h4><span>支付：</span><img src="images/pay01.png" /><img src="images/pay02.png" /><img src="images/pay03.png" /></h4>
+						<span>分期：招商信用卡分期</span>
+						<p>温馨提示：
+1、   海外发货的部分商品不支持礼品卡支付，不支持货到付款，且不开具购物发票；商品退货税费全部返还；商品无质量问题，运费不退；
+2、   根据中国海关总署要求，购买海外仓商品清关入境需要提供身份证信息进行入境申报，请您配合。我们不会向第三方泄露您的资料，请您放心；
+3、   退货商品需确保相关配件、单据、吊牌（不能从商品上拆除）、包装、卡证等要完好、齐全，不影响二次销售；如商品为鞋靴，请勿将物流面单地址直接贴在鞋盒上，寄回进行二次包装;
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- 商品介绍部分-->
+			<div class="pd_detail clearfix">
+				<!-- 商品详细信息-->
+				<div class="infor clearfix">
+					<!-- 商品导航-->
+					<ul class="infor_nav">
+						<li id="infor_nav1" class="first active"><a href="javascript:;">商品详情</a></li>
+						<li id="infor_nav2"><a href="javascript:;">尺码及体验</a></li>
+						<li id="infor_nav3"><a href="javascript:;">用户评论</a></li>
+						<li id="infor_nav4"><a href="javascript:;">保养与售后</a></li>
+						<li id="infor_nav5"><a href="javascript:;" class="goTo">加入购物袋</a></li>
+					</ul>	
+					<!-- 商品详情-->
+					<div class="details clearfix">
+						<h3>商品详情</h3>
+						<div class="details_l">
+							<p><b>商品名称：</b><span> 女士连帽双面呢大衣 MT154OVC04W02</span></p>
+							<p><b>商品材质：</b><span>面料成分：羊毛57.4% ,锦纶21.7%,粘纤20.9%（连接线除外</span></p>
+							<p><b>领型：</b><span>翻领</span></p> 	
+							<p><b>薄厚：</b><span>常规</span></p>
+							<p><b>风格：</b><span>欧美</span></p>
+							<p><b>流行元素：</b><span>经典<span></p>  	
+							<p><b>袖型：</b><span>常规</span></p> 	
+						</div>
+						<div class="details_r">
+							<p><b>原厂货号：</b><span>MT154OVC04W02</span></p>	
+							<p><b>商品产地：</b><span>中国</span></p>
+							<p class="blank">  </p>
+							<p><b>衣长：</b><span>中长款</span></p>	  
+							<p><b>袖长：</b><span>长袖 </span></p>
+							<p><b>场合：</b><span>休闲 </span></p>
+							<p><b>图案：</b><span>拼色 </span></p>
+							<p><b>适用季节：</b><span>冬季 </span></p>
+						</div>
+						<h3>品牌故事</h3>
+						<dl>
+							<dt>
+								<img src="images/story.jpg" />
+							</dt>
+							<dd>
+								<h2>MO&Co.</h2>
+								<span>MO&Co.于2004年诞生，一直以来以旗帜鲜明的创新理念、独特个性的设计与裁剪迅速成为了备受瞩目的主流时尚品牌。擅长以天然的材质、内敛的裁剪和独特的细节演绎型格又略带女人味的摩登法式风格，贯穿怀旧和当代，以充满激情的创造力将艺术和时装联系在一起，于视觉艺术、立体结构主义中寻找一切创作灵感。全线产品物流从服装皮草到配饰都十分丰富与多元化，为追求完美又童心未泯的大都会女性提供了混搭的实验乐趣。</span>
+								<p><a href="javascript:;" id="enterStore" class="goTo">进入品牌店</a><a href="javascript:;" id="concern"><span>关注品牌</span></a></p>
+							</dd>
+						</dl>
+						<img src="images/details_size.jpg" />
+					</div>	
+					<!-- 尺码及体验-->
+					<div class="size-expe">
+						<h3>尺码及体验</h3>
+						<table>
+							<tr>
+								<td>尺码</td>
+								<td>胸围</td>
+								<td>臀围</td>
+								<td>肩宽</td>
+								<td>袖长</td>
+								<td>前衣长</td>
+								<td>下摆围</td>
+							</tr>
+							<tr>
+								<td>XS</td>
+								<td>106</td>
+								<td>38</td>
+								<td>50</td>
+								<td>53.4</td>
+								<td>87</td>
+								<td>108</td>
+							</tr>
+							<tr>
+								<td>S</td>
+								<td>110</td>
+								<td>39</td>
+								<td>51.5</td>
+								<td>54</td>
+								<td>89</td>
+								<td>112</td>
+							</tr>
+							<tr>
+								<td>M</td>
+								<td>114</td>
+								<td>40</td>
+								<td>53</td>
+								<td>54.8</td>
+								<td>91</td>
+								<td>116</td>
+							</tr>
+						</table>
+						<img src="images/size-expe.jpg" />
+					</div>
+					
+					<!-- 保养及售后-->
+					<div class="upkeep-after">
+						<h3>保养及售后</h3>
+						<div class="explain">
+							尚品价：在尚品网展示颜色为黑色，尚品价为商品在尚品网的初始售价，商品初次上架会以尚品价进行售卖。
+<p>金牌会员价：在尚品网展示颜色为蓝色，此价格为会员享受的专属售价，部分品牌不支持会员价。
+促销价：在尚品网展示颜色为红色，尚品网会针对部分商品进行打折促销活动，促销价为商品促销活动时的售价。
+预热价：展示在商品售价后方的对比价格，打折促销活动开启之前，会提前告诉用户促销活动时的售价，此价格在活动正式开启时生效。
+划线价：商品售价后方的对比价格，会有横线划掉该价格，一般展示的为商品的尚品价，即该商品的上架时的售价。</p>
+异常问题： 商品的具体售价以订单结算页价格为准；如您发现商品售价或促销信息有异常，建议购买前先联系销售商咨询。
+
+
+重要提示 1.根据海关相关规定，每年个人跨境购物总金额超出2万元，可能会导致商品清关速度缓慢，如需要，我们会与您联系配合海关提供相关证明信息，以便尽快清关。如因不配合海关清关导致的商品退货，罚没等，将从您已支付的货品金额中扣除由此产生的相关费用。
+ 2.您在本（公司）网站上购买海外发货商品时，自动视为您同意由本（公司）网站代您向海关申报和代缴税款。
+ 3.尚品网所售海外商品由于受到海外供应商库存销售情况变动影响，无法完全确保于您下单时仍有充沛库存，您所选购的海外商品订单，以尚品网确认并发货时方视为成立。
+ 4.您购买的境外商品适用的品质、健康、标识等项目使用标准符合原产国使用标准，可能与我国标准有所不同，所以在使用过程中由此可能产生的危害或损失以及其他风险，将由您个人承担。
+
+一、退货说明
+
+1.商品自签收之日起7日内无理由退货； 2.如您购买箱包、鞋靴类商品，自签收之日起15天内，出现国家三包所规定的质量问题时，请您在第一时间与尚品网联系，经尚品网检验质量问题属实后，我们会为您维修或者办理换货。如超出15天的时间，可以在保修期享受有偿维修服务；
+3.出于安全和卫生考虑，贴身用品如内衣裤，袜子，泳衣类商品，一经售出不予退货，经权威部门检测商品存在质量问题者除外。
+4.退货商品需确保相关配件、单据、吊牌（不能从商品上拆除）、包装、卡证等要完好、齐全，不影响二次销售；如商品为鞋靴，请勿将物流面单地址直接贴在鞋盒上，为避免商品损坏，退货寄回时需进行二次包装; 请您使用普通快递寄回，不支持到付或平邮等邮寄方式，以免影响您的退换货效率；
+5.如若申请办理的商品订单中含有赠品，您需要将赠品一同寄回；
+6.请先预付快递运费，待商品质检入库后，如因产品质量原因导致的退货，尚品网将补给您20元现金券，每个包裹最高补贴20元；
+7.若申请办理的订单中使用了优惠券，在退货过程中，优惠券将会被拆分计算，具体信息请您留意个人账户中的订单信息提示；
+8.退货申请受理之日起两周内，尚品网如未收到退货包裹，将自动取消售后申请。
+
+二、以下情况无法办理退货
+1.任何已经被使用、穿着、洗涤或被损坏，商品有质量问题除外；
+2.因非正常使用及保管不当导致出现质量问题或损坏的商品；
+3.任何因非正常使用及保管导致出现质量问题的商品；
+4.商品为定制类商品、或者贴身类商品；
+5.在尚品网商品终端详情页说明中，另有说明无法办理退换货的商品；
+6.内衣、泳衣、耳饰等贴近皮肤的商品。
+7.商品的标签和相关附属配件（如防尘袋、包装盒，身份卡证等）已经丢失或拆卸，任何标贴和相关附属配件的拆卸；
+8.对于带有安全封条商品，如安全封条拆除或破损则无法为您办理退货，请您务必保证安全封条的完整性；
+<p>9.客户未经尚品网办理退货申请，直接将商品寄回尚品网，尚品网不承担保管、重新发货、退款责任，必要时尚品网有权处置滞留商品。</p>
+						</div>
+					</div>
+				</div>
+				<!-- 您可能喜欢-->
+				<div class="mayLike clearfix">
+					<h4>您可能喜欢</h4>
+					<dl>
+						<dt><a href="javascript:;"><img src="images/mayLike1.jpg"/></a></dt>
+						<dd>
+							<div>
+								<h5><a href="javascript:;">MO&Co.</a></h5>
+								<span><a href="javascript:;">秋冬女经典大气大翻领暗扣口袋有型毛呢外套MA154OVC01</a></span>
+							</div>
+							<p><b>￥ 599</b><del>￥1999</del></p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:;"><img src="images/mayLike2.jpg"/></a></dt>
+						<dd>
+							<div>
+								<h5><a href="javascript:;">MO&Co.</a></h5>
+								<span><a href="javascript:;">长线条大翻领错位喷漆纽扣A型毛呢大衣MA1631OVC01</a></span>
+							</div>
+							<p><b>￥ 769</b><del>￥1699</del></p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:;"><img src="images/mayLike3.jpg"/></a></dt>
+						<dd>
+							<div>
+								<h5><a href="javascript:;">MO&Co.</a></h5>
+								<span><a href="javascript:;">西装领暗扣大口袋中长款纯色休闲毛呢外套MA1631COT22</a></span>
+							</div>
+							<p><b>￥ 1379</b><del>￥2999</del></p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:;"><img src="images/mayLike4.jpg"/></a></dt>
+						<dd>
+							<div>
+								<h5><a href="javascript:;">MO&Co.</a></h5>
+								<span><a href="javascript:;">中长款一粒扣西装领多色毛呢大衣MA1641COT23 moco</a></span>
+							</div>
+							<p><b>￥ 1249</b><del>￥2499</del></p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:;"><img src="images/mayLike5.jpg"/></a></dt>
+						<dd>
+							<div>
+								<h5><a href="javascript:;">MO&Co.</a></h5>
+								<span><a href="javascript:;">中长款一粒扣西装领多色毛呢大衣MA1641COT23 moco</a></span>
+							</div>
+							<p><b>￥ 879</b><del>￥2199</del></p>
+						</dd>
+					</dl>
+				</div>	
+				<!-- 用户评论-->
+				<div class="review">
+					<h3>用户评论</h3>
+					<!-- 评论统计-->
+					<div class="review_t clearfix">
+						<div class="review_comprehensive">
+							<h4>综合评分</h4>
+							<h1>5.0</h1>
+							<span class="star"></span>
+							<p>共有<b>1</b>条评论</p>
+						</div>
+						<div class="review_styles clearfix">
+							<h4>舒适度</h4>
+							<div class="clearfix first"><span>5.0</span><span class="star"></span></div>
+							<h4>款式</h4>
+							<div class="clearfix"><span>5.0</span><span class="star"></span></div>
+						</div>
+						<div class="review_size clearfix">
+							<ul>
+								<h4>尺码</h4>
+								<li class="li1"><b>100%</b>用户认为合适</li>
+								<li class="li2"><i></i>100% 用户认为合适</li>
+								<li class="li3"><i></i>0% 用户认为偏小</li>
+								<li class="li4"><i></i>0% 用户认为偏大</li>
+							</ul>
+							<img src="images/review_size.jpg" />
+						</div>
+						<div class="review_evaluation">
+							<h5>购买过本商品可以发表评论</h5>
+							<a href="javascript:;" class="goTo">我要评论</a>
+						</div>
+					</div>
+					<!-- 评论具体情况-->
+					<div class="review_b">
+						<!-- 顶部导航条-->
+						<div class="rb_nav">
+							<!-- 评论导航条-->
+							<ul class="review_nav">
+								<li class="first active"><a href="javascript:;">全部<span>(1)</span></a></li>
+								<li><a href="javascript:;">有图片<span>(0)</span></a></li>
+								<li><a href="javascript:;">该品牌其他商品最新评论</a></li>
+							</ul>
+							<ul class="sort">
+								<li><a href="javascript:;" class="active">按发布时间从新到旧排序</a></li>
+								<li><a href="javascript:;">按发布用户等级排序</a></li>
+							</ul>
+						</div>
+						<!-- 评论内容-->
+						<div class="rb_content">
+							<!-- 全部评论-->
+							<div class="review_all">
+								<div class="all_blank clearfix">
+									<p>还没有其他人发表评论，你有心得体会？赶紧告诉大家吧~</p>
+									<a href="javascript:;" class="goTo">我要评论</a>
+								</div>
+								<div class="user_words clearfix">
+									<dl>
+										<dt><img src="images/user_logo01.jpg" /></dt>
+										<dd>
+											<p>尚品用户</p>
+											<span>普通会员</span>
+										</dd>
+									</dl>
+									<ul>
+										<li><b>综合：</b><span class="star"></span></li>
+										<li><b>尺码：</b><span>合适</span></li>
+										<li><b>尺码：</b><span>该用户未发表评论</span></li>
+										<p><span class="last">颜色/浅花灰 &nbsp; &nbsp; 尺码/XS</span></p>
+									</ul>
+									<p>2016/02/23</p>
+								</div>
+								<!-- 页码-->
+								<div class="pagination">
+									<a href="javascript:;">  &lt;上一页 </a>
+									<a href="javascript:;">1</a>
+									<a href="javascript:;"> 下一页&gt;  </a>
+								</div>
+							</div>
+							<!-- 图片评论-->
+							<div class="review_img">
+								<div class="img_blank clearfix">
+									<p>还没有人晒图，你来带个头？</p>
+									<a href="javascript:;" class="goTo">我要评论</a>
+								</div>
+								<!-- 页码-->
+								<div class="pagination">
+									<a href="javascript:;">  &lt;上一页 </a>
+									<a href="javascript:;">1</a>
+									<a href="javascript:;"> 下一页&gt;  </a>
+								</div>
+							</div>
+							<!-- 该品牌的其他商品评论-->
+							<div class="review_other">
+								<div id="review_content">
+									
+								</div>
+								
+								<!-- 页码-->
+								<div class="pagination" id="other_pages">
+									<a href="javascript:;" class="previous">  &lt;上一页 </a>
+									<a href="javascript:;" class="p1">1</a>
+									<a href="javascript:;" class="p2">2</a>
+									<a href="javascript:;" class="p3">3</a>
+									<a href="javascript:;" class="p4">4</a>
+									<a href="javascript:;" class="p5">5</a>
+									<a href="javascript:;" class="next"> 下一页&gt;  </a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<!-- 浏览过的商品-->
+			<div class="browsed clearfix">
+				<h3>您浏览过的商品</h3>
+				<dl>
+					<dt><a href="javascript:;"><img src="images/browsed1.jpg"/></a></dt>
+					<dd>
+						<div>
+							<h5><a href="javascript:;">MO&Co.</a></h5>
+							<span><a href="javascript:;">女士连帽双面呢大衣 MT154OVC04W02</a></span>
+						</div>
+						<p><b>￥ 2899</b></p>
+					</dd>
+				</dl>
+			</div>
+			<!-- 页面底部-->
+			<div class="bottom">
+				<ul>
+					<h4>售后服务</h4>
+					<li><a href="javascript:;">退换货流程</a></li>
+					<li><a href="javascript:;">退换货政策</a></li>
+					<li><a href="javascript:;">退换货地址</a></li>
+					<li><a href="javascript:;">退款说明</a></li>
+					<li><a href="javascript:;">售后维修</a></li>
+				</ul>
+				<ul>
+					<h4>配送说明</h4>
+					<li><a href="javascript:;">配送范围</a></li>
+					<li><a href="javascript:;">配送费用及时效</a></li>
+					<li><a href="javascript:;">无货/配货异常处理方法</a></li>
+				</ul>
+				<ul>
+					<h4>支付方式</h4>
+					<li><a href="javascript:;">在线支付</a></li>
+					<li><a href="javascript:;">货到付款</a></li>
+				</ul>
+				<ul>
+					<h4>扫描尚品二维码</h4>
+					<a href="javascript:;"><img src="../common/images/bottom_download.png"/></a>
+				</ul>
+				<div class="bottom_r">
+					<div class="office">
+						<p><img src="../common/images/bottom_weixin.jpg"/> <a href="javascript:;">尚品网官方微信</a></p>
+						<p><img src="../common/images/bottom_weibo.jpg"/> <a href="javascript:;">尚品网官方微博</a></p>
+					</div>
+					<div class="hotline">
+						<p>客户服务热线 Customer service hotline</p>
+						<span>4006-900-900</span>
+						<p>（早08:00-晚22:00）</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 页脚-->
+			<div class="footer">
+				<p> 
+					<a href="javascript:;" id="img1"></a>
+					<a href="javascript:;" id="img2"></a>
+					<a href="javascript:;" id="img3"></a>
+				</p>
+				<ul class="footer_t">
+					<li><a href="javascript:;">关于尚品</a></li>
+					<li><a href="javascript:;">尚品新闻</a></li>
+					<li><a href="javascript:;">招聘信息</a></li>
+					<li><a href="javascript:;">品牌招商</a></li>
+					<li><a href="javascript:;">帮助中心</a></li>
+					<li><a href="javascript:;">联系我们</a></li>
+					<li><a href="javascript:;">友情链接</a></li>
+					<li><a href="javascript:;">网站地图</a></li>
+					<li class="last"><a href="javascript:;">搜索直通车</a></li>
+				</ul>
+				<div class=" footer_b">
+					<p>北京尚品百姿电子商务有限公司</p>
+					<p>京公网安备110105001984 京ICP备09087291号-2 京ICP证090703号Copyright © 2010-2016 Shangpin.com All Rights Reserved</p>
+					<ul>
+						<a href="javascript:;"><img src="../common/images/footer_b1.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b2.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b3.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b4.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b5.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b6.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b7.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b8.gif"/></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript" src="../common/js/jquery-1.11.3.js" ></script>
+	<script type="text/javascript" src="../common/js/jquery.cookie.js" ></script>
+	<script type="text/javascript" src="../common/js/common.js" ></script>
+	<script type="text/javascript" src="js/detail.js" ></script>
+	</body>
+</html>

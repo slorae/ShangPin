@@ -1,0 +1,107 @@
+/*下拉中心*/
+.logined{margin-right: 0;}
+/*购物车主体*/
+.shoppingCart{margin-top: 15px;}
+	/*购物车头部*/
+	.spCart-header{height: 152px;}
+		.spCart-step{height: 35px;margin-bottom: 15px;}
+			.spCart-step>a{display: block;float: left;}
+			.spCart-step ul{float: right;width: 435px;}
+				.spCart-step ul li{float: left;background: #F1F1F1 ;width: 145px;height: 35px;line-height: 35px;text-align: center;position: relative;}
+				.spCart-step ul li.left{background: #0700C5;color: #fff;}
+					.spCart-step ul li span{position:absolute;right:0;top:0;background: url(../../common/images/order_icon02.gif) no-repeat;width: 22px;height: 35px;}
+					.spCart-step ul li.left span{background-position:0 -65px;}
+					.spCart-step ul li.center span{background-position:0 -25px;}
+		.spCart-header>a{display: block;width: 100%;height: 60px;background: #000;color: #fff;font-size: 22px;line-height: 60px;text-align: center;margin-bottom: 14px;}
+		.spCart-header h3{font-size: 12px;color: #2B74C5;background: url(../../common/images/order_icon02.gif) no-repeat left center;padding-left: 25px;background-position: -183px -334px;}
+	/*购物车表格部分*/
+	.spCart-table{min-height:200px;}
+		.spCart-table  input[type=checkbox]{display:inline-block;vertical-align:middle;margin-right: 25px;}
+		/*标题*/
+		.table-title{height: 24px;background: #F4F4F4;padding-left: 23px;margin-bottom: 10px;}
+			.table-title li{float: left;width:132px;text-align:center;line-height: 24px;color: #212121;}
+			.table-title li.first{margin-right:275px ;text-align: left;}
+			.table-title li label,.table-bottom li label{cursor: pointer;}
+		/*商品列表*/
+		.table-list{display: none;}
+			/*列表表头部分*/
+			.table-list-title{height: 33px;border: 1px solid #E2E2E2;line-height: 33px;padding-left: 23px;}
+			/*商品为空显示的块*/
+			#spCart-blank{height: 139px;line-height: 139px;border: 1px solid #E2E2E2;border-top: none;text-align: center;}
+				#spCart-blank span{display: inline-block;margin-right: 20px;}
+				#spCart-blank a{display: inline-block;width: 124px;height: 28px;text-align: center;line-height: 28px;background: #0700C5;color: #fff;}
+				.spCart-blank a:hover{background: #1B14E5;}
+			/*商品的详细列表*/
+			.table-list-content{}
+				/*每个商品的列表*/
+				ul.table-goods{height: 123px;padding:10px 23px;border: 1px solid #E2E2E2;border-top: none;}
+					ul.table-goods li{float: left;padding-top: 15px;height: 108px;}
+					/*选择框*/
+					ul.table-goods li.list-chk{padding-top:50px;height: 73px;}
+					/*商品*/
+					ul.table-goods li.list-item{padding-top:0;margin-right: 30px;width: 348px;height: 123px;}
+					/*图文详情*/
+					.list-item{position: relative;}
+						.list-item dl{width: 315px;}
+							.list-item dt{width: 90px;height: 120px;border: 1px solid #ccc;float: left;}
+								.list-item dt img{width: 90px;height: 120px;}
+							.list-item dd{width: 215px;float: right;margin-top: 15px;}
+								.list-item dd p.last{margin-top: 5px;}
+									.list-item dd p a:hover{color: black;}
+						/*放大的图片展示*/
+						.table-tool{height: 280px;width:210px;backface-visibility: #fff;position: absolute;border: 1px solid #DFDFDF;text-align: center;top:-36px;right:36px;z-index: 3;display: none;}
+							.table-tool span{position: absolute;width: 9px;height: 16px;left: -9px;top: 67px;background: url(../../common/images/cart_icon.png) no-repeat -24px -67px;}
+							.table-tool img{width: 210px;height: 280px;}
+					/*价格*/
+					ul.table-goods li.list-price{margin-right: 30px;width:120px;text-align: center;}
+						.list-price b{color: #C62026;font-size: 14px;display:inline-block;margin-right: 10px;}
+						.list-price del{color: #888;font-size: 14px;} 
+					/*加减及输入框*/
+					ul.table-goods li.list-amount{height: 24px;margin-right: 75px;}
+						.list-amount input{width: 34px;border: 1px solid #999;text-align: center;height: 20px;display:inline-block;vertical-align: middle;outline: none;}
+						.list-amount a{display: inline-block;width: 18px;height: 22px;border: 1px solid #DBDBDB;text-align: center;vertical-align: middle;font-size: 18px;line-height: 22px;}
+						li.list-amount a:hover{color: #F62026;}
+						.list-amount a.minus{border-right: none;color: #E0E0E0;}
+						.list-amount a.plus{border-left: none;color: #999;}
+					/*小计*/
+					ul.table-goods li.list-sum{margin-right: ;font-size: 14px;margin-right: 80px;width: 60px;}
+					/*操作*/
+					.list-handle{position: relative;}
+					.list-handle>a{display: block;}
+					.list-handle>a:hover{color:#000;}
+					.collect:hover{text-decoration: underline;}
+						/*删除出现的确认框*/
+						.remove_tool{position: absolute;top:60px;right:-30px;width: 160px;height: 73px;background: #fff;z-index: 2;border: 1px solid #979797;padding-top:22px;padding-left:10px;text-align: center;display: none;}
+						.remove_tool.active{display: block;}
+							.remove_tool i{position: absolute;top:-6px;right: 37px;width: 9px;height: 6px;overflow: hidden;background: #fff url(../../common/images/sp_li.gif) no-repeat;background-position: -149px -225px;}
+							.remove_tool span{display:inline-block;margin-bottom: 10px;text-align: center;}
+							.remove_tool a{display: inline-block;width: 67px;height: 30px;text-align: center;line-height: 30px;}
+							.affirm{color: #fff;background: #0701C5;margin-right: 10px;}
+							.affirm:hover{background: #1B14E5;color: #fff;}
+							.cancel{color: #04070C;background: #ECEBF0;}
+							.cancel:hover{background: #E7E7E7;}
+		/*商品内容底部*/
+		.table-bottom{height: 34px;border: 1px solid #E2E2E2;border-top: none;padding-left: 23px;line-height: 34px;}
+			.table-bottom li{float: left;margin-right: 25px;}
+				.table-bottom li a{color: #D9D9D9;cursor: default;}
+				#removeSelected.active{color:#717171;cursor:pointer;}
+				#removeSelected.active:hover{color:#000;text-decoration:underline;}
+				
+			.table-bottom li.totalNum{float: right;margin-right: 15px;}
+	/*购物车底部*/
+	.spCart-bottom{height: 124px;margin-top: 42px;}
+		.spCart-bottom p{font-size: 18px;margin-right: 15px;text-align: right;width: 200px;float: right;}
+				.spCart-bottom p span{color: #075FD8;}
+		.spCartb-b{height: 80px;clear: both;}
+			.spCartb-b>img{float: left;}
+			.settleBox{float: right;margin-top: 15px;}
+				.settleBox a{display:inline-block;height: 30px;width: 180px;font-size: 16px;line-height: 30px;text-align: center;}
+			#goShopping{color: #000;border: 1px solid black;margin-right: 58px;}
+			#settleAccounts{color: #fff;background: #F0F0F0;}
+
+/*弹窗*/
+div.popup{position: fixed;top: 50%;left:50%;margin-left:-150px ;margin-top: -100px;width: 300px;height: 150px;background: #eee;text-align: center;line-height: 100%;z-index: 999;padding-top: 50px;}
+	.popup p{height: 50px;line-height: 50px;text-align: center;font-size: 20px;margin-bottom: 20px;}
+	.popup a{display: inline-block;width: 80px;height: 40px;text-align: center;line-height: 40px;background: #0700C5;color: #eee;margin-right: 20px;}		
+			
+		

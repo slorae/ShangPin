@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>尚品-登录</title>
+		<link rel="stylesheet" href="../common/css/common.css" />
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body>
+		<div class="layout ">
+			<!-- 头部logo-->
+			<div class="header">
+				<a href="../index.html"><img src="../common/images/logo2.png" alt="尚品网-奢侈品"/></a>
+			</div>
+			
+			<!-- 登录主体-->
+			<div class="login">
+				<!-- 登录主体 左边表单部分-->
+				<div class="login_l clearfix">
+					<div class="loginl_t">
+						<a href="javascript:;">登录</a>
+					</div>
+					<!-- 手机号码-->
+					<div class="form_list">
+						<p><input type="text" placeholder="请输入已验证的手机或邮箱" id="phone" maxlength="11"/></p>
+						<span class="tip">账号名</span>
+					</div>
+					
+					<!-- 密码-->
+					<div class="form_list">
+						<p><input type="password" placeholder="请输入密码" id="password"/></p>
+						<span class="tip">密码</span>
+					</div>
+					
+					<!-- 图片验证码-->
+					<div class="form_list">
+						<p>
+							<input type="text" placeholder="请输入验证码" id="imgCode" maxlength="4"/>
+							<img src="images/KQ2T.gif" id="code"/>
+							<a href="javascript:;" id="change">换一换</a>
+						</p>
+						<span class="tip">图形码</span>
+					</div>
+					<a href="register.html" class="forget">忘记密码？</a>
+					<a href="javascript:;" id="btn">登录</a>
+					<div class="loginl_b">
+						<span>没有尚品网账号？</span>
+						<a href="register.html">注册新会员</a>
+					</div>
+				</div>
+				<!-- 登录主体 右边部分-->
+				<div class="login_r">
+					<b>使用以下账号直接登录</b>
+					<p>
+						<a href="javascript:;"><img src="images/right1.png"/></a>
+						<a href="javascript:;"><img src="images/right2.png"/></a>
+						<a href="javascript:;"><img src="images/right3.png"/></a>
+					</p>
+					<dl>
+						<dt>
+							<a href="javascript:;"><img src="../common/images/bottom_download.png"/></a>
+						</dt>
+						<dd>
+							【扫码下载尚品APP】
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- 页脚-->
+			<div class="footer">
+				<ul class="footer_t">
+					<li><a href="javascript:;">关于尚品</a></li>
+					<li><a href="javascript:;">尚品新闻</a></li>
+					<li><a href="javascript:;">招聘信息</a></li>
+					<li><a href="javascript:;">品牌招商</a></li>
+					<li><a href="javascript:;">帮助中心</a></li>
+					<li><a href="javascript:;">联系我们</a></li>
+					<li><a href="javascript:;">友情链接</a></li>
+					<li><a href="javascript:;">网站地图</a></li>
+					<li class="last"><a href="javascript:;">搜索直通车</a></li>
+				</ul>
+				<div class=" footer_b">
+					<p>京公网安备110105001984  京ICP备09087291号-2  京ICP证090703号Copyright  ©  2010-2016  Shangpin.com  All Rights Reserved</p>
+					<ul>
+						<a href="javascript:;"><img src="../common/images/footer_b1.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b2.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b5.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b6.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b7.gif"/></a>
+						<a href="javascript:;"><img src="../common/images/footer_b8.gif"/></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../common/js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="../common/js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../common/js/common.js" ></script>
+		<script type="text/javascript" src="js/login.js" ></script>
+	</body>
+</html>

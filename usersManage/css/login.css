@@ -1,0 +1,41 @@
+/*header*/
+body{background: #F6F6F6;font: 14px/1.5 "微软雅黑","宋体","Arial Narrow",HELVETICA;}
+.header{height: 35px;padding: 22px 0;background: #F6F6F6;}
+	.header a{display: block;width: 315px;margin: 0 auto;}
+	
+/*login*/
+.login{height: 505px;padding: 36px 0;margin-bottom: 10px;background: #fff;}
+	/*左边表单部分*/
+	.login_l{width: 524px;float: left;}
+		.loginl_t{height: 29px;border-bottom: 1px solid #E5E5E5;margin-bottom: 40px;}
+			.loginl_t a{display: block;height: 29px;border: 1px solid #E5E5E5;border-bottom:none ;background:#fff url(../images/login_bg.png) left center no-repeat;padding-left: 55px;width: 55px;color: black;margin-left: 100px;line-height: 29px;}
+			
+		.form_list{height:75px ;margin-left: 100px;}
+			.form_list>p{height: 45px;width: 400px;}
+			.form_list input{height: 15px;border: 1px solid #B1ADAA;width: 370px;padding: 14px;outline: none;}
+				#imgCode,#phoneCode{width: 228px;float: left;margin-right: 20px;}
+				#code{width:60px;height:25px;float: left;margin-top: 10px;margin-right: 10px;}/*图片验证码*/
+				#change{float: left;font-size: 12px;margin-top: 12px;}/*换验证码按钮*/
+			.tip{display: block;height: 30px;line-height: 30px;font-size: 12px;color: #130ECC;background: url(../images/tip_bg.jpg) no-repeat left center; padding-left: 20px;display: none;}/*提示文字*/
+			/*忘记密码*/
+			.forget{text-align: right;margin-top: 8px;display: block;width: 400px;margin-left: 100px;font-size: 12px;color:#0700C5 ;text-decoration:underline;margin-bottom: 5px;}
+			.forget:hover{color:#0700C5 ;}
+			/*登录按钮*/
+			#btn{width: 400px;height: 36px;display:block;line-height: 36px;font-size: 18px;color: #fff;text-align: center;background: #E5E5E5;margin-left: 100px;margin-bottom: 13px;}
+			#btn.active{background: #0700C5;}
+		/*去注册*/
+		.loginl_b{width: 250px;height: 20px;margin-left: 175px;}
+			.loginl_b span{display: inline-block;font-size: 16px;}
+			.loginl_b a{display: inline-block;font-size: 18px;color: #0700C5;text-align: center;height: 20px;line-height:20px;width:90px;background: url(../images/go_login.png) right center no-repeat;padding-right: 25px;}
+	/*右边表单部分*/
+	.login_r{width: 370px;float: right;border-left:1px solid #E7E7E7 ;margin-top: 65px;height: 440px;}
+		
+		/*下部分*/
+		.login_r b{display: block;margin-left: 60px;margin-bottom: 30px;}
+		.login_r p{width: 250px;margin-left: 50px;height: 50px;margin-bottom: 50px;}
+			.login_r p a{display: inline-block; margin-right: 25px;}
+		.login_r dl{margin-left: 120px;}
+/*footer*/
+.footer{background: #fff;font-size: 12px;}
+	
+.footer_b ul{padding-left: 235px;}
